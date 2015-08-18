@@ -1,0 +1,32 @@
+//  ---------------------------------------------------------------------------
+//
+//  CSS file for framework demo page
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = IMPORTS
+//  ---------------------------------------------------------------------------
+
+	// Your project configuration, adapt to you needs
+	@import "awesomeness-configuration";
+
+	// Common base
+	@import "base";
+
+	// Code highlighting (only for the demo page, can be removed)
+	@import "imports/prism";
+
+	// Modules (only for the demo page, can be removed)
+	@import "imports/modules/msg";
+	@import "imports/modules/meta-info";
+    @import "imports/modules/button";
+
+
+	// It's just a demo, don't judge me ;)
+	body
+	{
+		@include rem(max-width, 85);
+		margin:0 auto;
+		@include rem(padding, $doubleSpace * 2 0);
+	}

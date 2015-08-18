@@ -1,0 +1,101 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the layout for the footer area.
+//
+//  ---------------------------------------------------------------------------
+
+.meta-info__texts
+{
+	@extend .cf;
+}
+
+.l-meta-info__text
+{
+	@include breakpoint($large-width)
+	{
+		@include span(2 of 6);
+		&:last-child {
+			@include omega;
+		}
+	}
+}
+
+.meta-info__text--is-margin-less
+{
+	margin-bottom:0;
+}
+
+.meta-info__text--is-half-margin
+{
+	@include rem(margin-bottom, $singleSpace);
+}
+
+.meta-info
+{
+	@extend .cf;
+	@include rem(padding, $doubleSpace 0);
+	@include rem(font-size, 1.4);
+	@include rem(line-height, 2.1);
+	color: $gray;
+}
+
+.meta-info__title
+{
+	color: $grayDark;
+}
+
+.meta-info__download
+{
+	@extend .h3;
+	@include rem(margin-bottom, $doubleSpace - $borderMedium);
+	border-bottom: solid $grayDark;
+	@include rem(border-bottom-width, $borderMedium);
+	text-align: center;
+}
+
+.download__text {
+	@include rem(margin-bottom, $doubleSpace);
+}
+
+.meta-info__link.btn {
+	@include rem(width, 15);
+	@include rem(margin-bottom, $singleSpace);
+}
+
+.meta-info__items
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.meta-info__item
+{
+	list-style-type: none;
+}
+
+.meta-info__copy
+{
+	@include rem(padding-top, $doubleSpace);
+	border-top: solid $grayDark;
+	@include rem(border-top-width, $borderMedium);
+	text-align: center;
+}
+
+.meta-info__icon-link
+{
+	display: block;
+	margin: 0 auto;
+	@include rem(max-width, 7.2);
+	@include rem(max-height, 7);
+	@include rem(margin-bottom, $singleSpace);
+	img {
+		display: block;
+		height: 100%;
+		max-height: 100%;
+	}
+}
+
+.no-touch .meta-info__icon-link:hover
+{
+		background-color: transparent;
+}

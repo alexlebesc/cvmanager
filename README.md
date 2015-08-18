@@ -18,3 +18,47 @@ this will regenerate the HTML, using the grunt file.
 Create the frontend side using yeoman.
 Create the backend using PHP command.
 XSLT will generate the HTML with the CV Content.
+
+Installation
+
+node https://nodejs.org
+
+bower
+$npm install -g bower
+
+grunt-cli
+$npm install -g grunt-cli
+
+Yeoman http://yeoman.io
+$npm install -g yeoman
+
+awesomeness generator
+need ruby
+install ruby on windows
+http://rubyinstaller.org/
+
+need compass
+possible error when running compass compilation
+solution:
+$gem install compass-normalize
+$gem install compass-rgbapng
+$gem install toolkit
+$gem install susy
+$gem install breakpoint
+
+need python > 2.5 < 3.0
+set PYTHON=D:\Python\bin\Python.exe for windows
+
+Running "browserSync:dev" (browserSync) task
+Warning: Cannot read property 'prototype' of undefined Use --force to continue.
+downgraded to version 2.1.2 and it works
+
+$npm install socket.io --save-dev
+
+susy SASS
+
+
+
+
+
+

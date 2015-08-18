@@ -1,0 +1,753 @@
+//  ---------------------------------------------------------------------------
+//
+//  Variables that override the default styles for Awesomeness
+//
+//  ---------------------------------------------------------------------------
+
+//  ---------------------------------------------------------------------------
+//
+//  Defines all BASIC variables.
+//
+//  ---------------------------------------------------------------------------
+
+//  = GRAYS
+//  ---------------------------------------------------------------------------
+
+	$black: 							#292929; 	//  16% white
+	$grayVeryDark:						#4d4d4d; 	//  30% white
+	$grayDarker:						#585858; 	//  35% white
+	$grayDark:							#707070; 	//  44% white
+	$gray:								#949494; 	//  58% white
+	$grayLight:							#b8b8b8; 	//  72% white
+	$grayVeryLight:						#dbdbdb; 	//  86% white
+			
+	$whiteSmoke:						#f5f5f5;	//	96% white
+	$whiteSoft:							#fbfbfb;	//	98% white
+	$white: 							#fff; 		// 100% white
+			
+	$sand:								#FAF8F5;
+
+//  = ACCENT COLORS
+//  ---------------------------------------------------------------------------
+
+	$red:								#e05a5a; // intuio red
+	$green:								#bfe05a;
+	$blue: 								#3890bd;
+	$magenta:							#ea4c88;
+	$purple:							#939;
+	$cyan:								#6cc;
+	$yellow:							#fff2bf;
+	$orange:							#f90;
+			
+	$primaryAccent:						$blue;
+	$secondaryAccent:					$red;
+
+//  = SCAFFOLDING
+//  ---------------------------------------------------------------------------
+
+	$bodyBackground:					$sand;
+	$bodyBackgroundColor:				$sand;
+	$textColor:							$grayVeryDark;
+
+//  = LINKS
+//  ---------------------------------------------------------------------------
+
+	$linkColor:							$secondaryAccent;
+	$linkColorHover:					darken($linkColor, 8);
+	$linkColorVisited:					darken($linkColor, 16%);
+	$linkColorInvisible:				$textColor;	
+
+//  = TYPOGRAPHY
+//  ---------------------------------------------------------------------------
+
+	$sansFontFamily:        			"proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	$serifFontFamily:       			"ff-meta-serif-web-pro", "Georgia", "Geneva", "Times New Roman", serif;
+	$monoFontFamily:        			"Menlo", "Monaco", "Consolas", "Courier New", monospace;
+			
+	$htmlFontSize:          			62.5%;	
+	$htmlLineHeight:        			1;
+	$baseLineHeight:					1.4;//px
+	$bodyFontSize:          			1.8;//px
+	$bodyLineHeight:        			$baseLineHeight * 2;
+	$baseFontFamily:        			$serifFontFamily;
+	$altFontFamily:         			$sansFontFamily;
+			
+	$smallFontSize:						$baseLineHeight - 0.2;
+
+	$normalFontWeight:					400;
+	$boldFontWeight:					700;
+
+	$headingsFontFamily:    			$sansFontFamily; 	// empty to use BS default, $baseFontFamily
+	$headingsFontWeight:    			700;	 			// same as browser default, bold
+	$headingsColor:         			inherit;			// empty to use BS default, $textColor
+			
+	$h1Size:							4.2;//px
+	$h1LineHeight:						4.2;//px
+			
+	$h2Size:							3.4;//px
+	$h2LineHeight:						4.2;//px
+				
+	$h3Size:							2.6;//px
+	$h3LineHeight:						2.8;//px
+			
+	$h4Size:							2.1;//px
+	$h4LineHeight:						2.8;//px
+
+//  = BORDERS
+//  ---------------------------------------------------------------------------
+
+	$borderRadius:						.2;//px
+	$borderThin:						.1;//px
+	$borderMedium:						.2;//px
+	$borderThick:						.4;//px
+	$borderVeryThick:					$baseLineHeight;
+
+//  = SPACING AND ALIGNMENT
+//  ---------------------------------------------------------------------------
+
+	$singleSpace:						$baseLineHeight;
+	$doubleSpace:						$singleSpace * 2;
+	$touchSize:							$singleSpace * 3;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	GRID MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = GRID SETTINGS
+//  ---------------------------------------------------------------------------
+
+	// Base is 10px at this point
+
+	// Relative column & gutter width
+	$r-column-width				: 6;
+	$r-gutter-width				: 4;
+	$r-grid-padding				: 6;
+	$r-grid-padding-large		: 4;
+	$r-grid-padding-huge		: 5;
+
+	// Columns for smallest screen
+	$total-columns		: 2;
+
+	$container-style	: fluid;
+
+//  = BREAKPOINTS
+//  ---------------------------------------------------------------------------
+	
+	// Base is 16px at this point
+
+	// Feature phone		: 0px		 2 columns	-->	   0-UP
+	$tiny-width				: 0;
+	$tiny-cols				: 2;
+
+	// Smartphone			: 320px		 4 columns 	-->  320-UP
+	$small-width			: 20em;
+	$small-cols				: 4;
+
+	// Smartphone landscape	: 480px 	 6 columns 	-->  480-UP
+	$medium-width			: 30em;
+	$medium-cols			: 6;
+
+	// Tablet 				: 600px, 	 8 columns 	-->  600-UP
+	$large-width			: 37.5em;
+	$large-cols 			: 8;
+
+	// Tablet landscape		: 1024px 	12 columns 	--> 1024-UP
+	$huge-width				: 64em;
+	$huge-cols				: 12;
+
+	// Desktop 				: 1280px 	16 columns 	--> 1280-UP
+	$giant-width			: 80em;
+	$giant-cols				: 16;
+
+	// Desktop large 		: 1600px 	20 columns 	--> 1600-UP
+	$monstrous-width		: 100em;
+	$monstrous-cols			: 20;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	ACCORDION MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$accordionLarge: 		$large-width;
+	$accordionHuge: 		$huge-width;
+
+//	= COLORS
+//	---------------------------------------------------------------------------
+
+	$accordionBaseColor: 					$whiteSmoke;
+	$accordionBorderColor:					darken($whiteSmoke, 10%);
+
+	$accordionLinkColor:					$textColor;
+	$accordionLinkHoverColor:				$primaryAccent;
+
+	$accordionDividerTopBorderColor:		lighten($whiteSmoke, 2%);
+	$accordionDividerBottomBorderColor:		darken($whiteSmoke, 10%);
+	$accordionDividerFontColor:				$headingsColor;
+
+	$accordionInnerBackgroundColor:			darken($accordionBaseColor, 1%);
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	BOX MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+
+	$boxBaseColor: 					$white;
+	$boxHighlight: 					$primaryAccent;
+	$boxHoverFontColor:				$textColor;
+	$boxBorderWidth:				$borderThin;
+	
+	// generic box
+	$boxBorderColor:				darken($white, 14%);
+	$boxBackgroundColor:			darken($white, 4%);
+	$boxBackgroundFallback:			darken($white, 2%);
+	$boxBackground:					linear-gradient($boxBaseColor, darken($boxBaseColor, 2%));
+	$boxHoverBackground:			linear-gradient(lighten($boxBaseColor, 1%), darken(darken($boxBaseColor, 2%), 1%));
+	$boxActiveBackground:			linear-gradient(darken($boxBaseColor, 2%), $boxBaseColor);
+	
+	// selected box
+	$boxSelectedLightColor:			lighten($boxHighlight, 30%);
+	$boxSelectedDarkColor:			lighten($boxHighlight, 28%);
+	$boxSelectedBorderColor:		$boxHighlight;
+	$boxSelectedBackground:			linear-gradient($boxSelectedLightColor, $boxSelectedDarkColor);
+	$boxSelectedHoverBackground:	linear-gradient($boxSelectedLightColor, $boxSelectedDarkColor);
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	BUTTON MODULE
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = GENERIC BUTTON
+//  ---------------------------------------------------------------------------
+
+	$btnBaseColor:						$white;
+	$btnBorderWidth:					$borderThin;
+	$btnBorderRadius:					2px;
+
+//  = PRIMARY ACTION
+//  ---------------------------------------------------------------------------
+
+	$btnPrimaryBaseColor:				$primaryAccent;
+	$btnPrimaryColor:					$white;
+
+//  = SUCCESS ACTION
+//  ---------------------------------------------------------------------------
+
+	$btnSuccessBaseColor:				$green;
+	$btnSuccessColor:					$textColor;
+
+//  = DESTROY ACTION
+//  ---------------------------------------------------------------------------
+
+	$btnDestroyBaseColor:				$red;
+	$btnDestroyColor:					$white;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	CALENDAR MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$calHuge: 		$huge-width;
+	$calGiant: 		$giant-width;
+	$calMonstrous:	$monstrous-width;
+
+//	= COLORS
+//	---------------------------------------------------------------------------
+
+	$calBaseColor: 					$white; 
+	$highlightColor: 				$primaryAccent;
+	$calTextColor:					$textColor;
+	$calLinkColor:					$linkColor;
+
+	$calColHeadTextColor:			darken($calBaseColor, 14%);
+	$calRowHeadTextColor:			darken($calBaseColor, 14%);
+	$calRowBorderColor:				darken($calBaseColor, 4%);
+
+	$calTitleBorderColor:			$highlightColor;
+	$calEntryHoverColor:			darken($calBaseColor, 14%);
+
+	$calCurrentTextColor:			$highlightColor;
+	$calCurrentBackgroundColor:		desaturate(lighten($highlightColor, 36%), 3%);
+	$calCurrentHoverColor:			desaturate(lighten($highlightColor, 30%), 3%);	
+
+	$calOutofdateTextColor:			darken($calBaseColor, 14%);
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	FEATURE MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$featureLarge: 		$large-width;
+	$featureHuge: 		$huge-width;
+	$featureGiant: 		$giant-width;
+
+//  = COLORS
+//  --------------------------------------------------------------------------- 
+	
+	$featureBaseColor: 						$white;
+	$featureHighlight:						$primaryAccent;
+
+	// TOUCH
+	$featureLinkBackgroundColorTouch:		$featureHighlight;
+	$featureLinkColorTouch:					$featureBaseColor;
+
+	// ACTIVE
+	$featureLinkTouchActiveBackgroundColor:	darken($featureHighlight, 8);
+	$featureLinkTouchActiveColor:			$featureBaseColor;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	FLYOUT MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$flyoutSmall: 		$small-width;
+	$flyoutMedium: 		$medium-width;
+	$flyoutLarge: 		$large-width;
+	$flyoutHuge: 		$huge-width;
+	$flyoutGiant: 		$giant-width;
+	$flyoutMonstrous:	$monstrous-width;
+
+
+//  BEHAVIOUR
+//  ---------------------------------------------------------------------------
+	
+	// Change flyout to sidebar on medium screens
+	$becomesSidebar:					true;
+	// Change flyout to top bar on large screens
+	$becomesTopBar:						false;
+    // Display 'Menu' text adjacent to hamburger nav
+    $flyoutDisplayMenuText:             true;
+
+//  COLORS
+//  ---------------------------------------------------------------------------
+	
+	// Change only base & toggle text color. All the other
+	// colors are calculated and adjusted automatically
+	$flyoutBaseColor:					$primaryAccent;
+	$flyoutToggleColor:					$white;
+
+	// Don't change these
+	$flyoutNavColor:					$white;
+	$flyoutNavBackgroundColor:			hsl(hue($flyoutBaseColor), 10%, 20%);
+	$flyoutNavBackgroundColorSidebar:	darken($flyoutBaseColor, 30%);
+	$flyoutContentBackground:			$bodyBackgroundColor;
+
+//  SIZES
+//  ---------------------------------------------------------------------------
+	
+	$flyoutSlideOpenDistance:			80%;
+	$flyoutSlideOpenDistanceMedium:		40%;
+	$flyoutLinkBorderWidth:				.1;
+	$flyoutLinkBorderRadius:			.6;
+	$flyoutLinkActiveArrowSize:			$singleSpace - .4;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	FORM MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$formsSmall: 		$small-width;
+	$formsMedium: 		$medium-width;
+	$formsLarge: 		$large-width;
+	$formsHuge: 		$huge-width;
+	$formsGiant: 		$giant-width;
+	$formsMonstrous:	$monstrous-width;
+
+//  = SIZES
+//  ---------------------------------------------------------------------------
+	
+	$inputHeightLarge:					$baseLineHeight * 4;
+	$inputHeight:						$baseLineHeight * 3;
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+		
+	$inputBorderColor:					$grayVeryLight;
+	$inputBorderRadius:					$borderRadius;
+	$inputFocusBorderColor:				$primaryAccent;
+
+	$inputRequiredColor:				$red;
+
+	$searchButtonHoverBackgroundColor:	$primaryAccent;
+	$searchButtonActiveBackgroundColor:	darken($primaryAccent, 10%);
+	$searchButtonHoverTextColor:		darken($primaryAccent, 40%);
+	
+	$placeholderTextColor:				$gray;
+	$disabledTextColor:					$grayVeryLight;
+		
+	$messageTextSize:					1.4;//px
+			
+	$errorTextColor:					$red; 
+	$errorBorderColor:					$red;  
+	$errorBackgroundColor:				lighten($errorBorderColor, 37%); 
+	$errorShadowColor:					transparentize(darken($red, 50%), .75);  
+	$errorIconColor:  					$red;  
+		
+	$successTextColor:					$green;
+	$successBorderColor:				$green;           
+	$successBackgroundColor:			lighten($successBorderColor, 16%);
+	$successIconColor:					$green;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	MESSAGE MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BORDER
+//  ---------------------------------------------------------------------------
+	
+	$msgBorderWidth:				$borderThin;
+	$msgBorderRadius:				.4; // = 4px
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+	
+	// INFO MESSAGE
+	$msgInfoBaseColor:				$blue;
+
+	// SUCCESS MESSAGE
+	$msgSuccessBaseColor:			$green;
+
+	// WARNING MESSAGE
+	$msgWarningBaseColor:			$yellow;
+
+	// ERROR MESSAGE
+	$msgErrorBaseColor:				$red;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	NAVIGATION BAR MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$navSmall: 		$small-width;
+	$navMedium: 	$medium-width;
+	$navLarge: 		$large-width;
+	$navHuge: 		$huge-width;
+	$navGiant: 		$giant-width;
+	$navMonstrous:	$monstrous-width;
+
+//  COLORS
+//  ---------------------------------------------------------------------------
+	
+	// Change only the base color. All the other
+	// colors are calculated and adjusted automatically
+	$navBaseColor:				$primaryAccent;
+	$navColor:					$white;
+
+	// Don't change these
+	$navBackgroundColor:		$navBaseColor;
+	$navBackgroundColorActive:	lighten($navBaseColor, 5%);
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	PANEL MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//	= COLORS
+//  ---------------------------------------------------------------------------
+
+	$panelHeadTextColor:			$white;
+	$panelHeadBackgroundColor:		$primaryAccent;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	PLACEHOLDER MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = COLORS
+//  --------------------------------------------------------------------------- 
+
+	$phTextBackgroundColor:		$grayVeryLight;
+	$phImgBackgroundColor:		darken($phTextBackgroundColor, 14%);
+    $phHeight:		            $bodyLineHeight/2 !default;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	PROGRESS BAR MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//	= COLORS
+//	---------------------------------------------------------------------------
+
+	$progessBackgroundColor:		$white;
+	$progressFillColor:				$blue;
+
+//	= ANIMATION PARAMETER
+//	---------------------------------------------------------------------------
+
+	$progress-delay: 			0;
+	$progress-duration: 		2s;
+	$progress-function: 		linear;
+	$progress-name: 			progress-bar-stripes;
+	$progress-count: 			infinite;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	SLIDER MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//	= COLORS
+//	---------------------------------------------------------------------------
+
+	$baseColor:			$white;
+	$borderColor: 		#e9e0d3;
+
+//	= BREAKPOINTS
+//  ---------------------------------------------------------------------------
+
+	$sliderLarge: 			$large-width;
+
+//	Special case to make the slider behave better on 1024px
+	$from-huge-width: 	64.0625em; // 1025px
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	SPINNER MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+
+    $spinner-hole-color:        transparent;
+    $spinner-size:              46px;
+    $spinner-background:        $whiteSmoke;
+    $spinner-fill:              $blue;
+
+
+
+//  = ANIMATION PARAMETER
+//  ---------------------------------------------------------------------------
+    $spinner-function:          linear;
+    $spinner-opacity:           .8;
+    $spinner-duration:          3s;
+    $spinner-count:             infinite;
+    $spinner-rotate-left:       spinner-rotate-left;
+    $spinner-rotate-right:      spinner-rotate-right;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	TABS MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$tabSmall: 		$small-width;
+	$tabMedium: 	$medium-width;
+	$tabLarge: 		$large-width;
+	$tabHuge: 		$huge-width;
+	$tabGiant: 		$giant-width;
+	$tabMonstrous:	$monstrous-width;
+
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+	
+	$tabBaseColor:				$primaryAccent;
+	$tabBorderColor:			$grayVeryLight;
+	$tabInactiveBorderColor:	hsl(hue($tabBorderColor), 50, 80);
+
+
+//  = BORDER
+//  ---------------------------------------------------------------------------
+	
+	$tabBorderWidth:			$borderThin;
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	TABLE MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$tableHuge: 		$huge-width;
+
+
+
+//	= COLORS
+//	---------------------------------------------------------------------------
+
+	$tableBaseColor: 					$white;
+	$table2ndBaseColor: 				$blue;
+
+	$tableBorderColor: 					darken($tableBaseColor, 4%);
+	$table2ndBorderColor:				desaturate(lighten($table2ndBaseColor, 30%), 3%);
+	
+	$table2ndBackgroundColor:			desaturate(lighten($table2ndBaseColor, 36%), 3%);
+	$table2ndHoverBackgroundColor:		desaturate(lighten($table2ndBaseColor, 30%), 3%);
+	
+	$tableDividerBorderColor:			darken($tableBaseColor, 42%);
+
+	$tableLasteditedBackgroundColor:	desaturate(lighten(adjust-hue($table2ndBaseColor, -120deg), 36%), 3%);
+
+	$tableDisabledBackgroundColor:		darken($tableBaseColor, 4%);
+	$tableDisabledTextColor:			darken($tableBaseColor, 28%);
+
+	$tableSelectedBorderColor:			desaturate(lighten($table2ndBaseColor, 36%), 3%);
+	$tableSelectedBackgroundColor:		desaturate(lighten($table2ndBaseColor, 30%), 3%);
+	$tableSelectedShadowColor:			darken($table2ndBaseColor, 30%);
+
+
+
+
+
+//  ---------------------------------------------------------------------------
+//	
+//	HORIZONTAL WIZARD MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = BREAKPOINTS
+//
+// 	These default to the global major breakpoints.
+//  You can adjust these breakpoints to have the 
+//  module better fit into a specific context.
+//  ---------------------------------------------------------------------------
+
+	$wizardSmall: 		$small-width;
+	$wizardMedium: 		$medium-width;
+	$wizardLarge: 		$large-width;
+	$wizardHuge: 		$huge-width;
+	$wizardGiant: 		$giant-width;
+	$wizardMonstrous:	$monstrous-width;
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+	
+	$wizardActiveBackground:			$primaryAccent;
+	$wizardActiveColor:					$white;
+
+//  ---------------------------------------------------------------------------
+//	
+//	VERTICAL WIZARD MODULE
+//
+//  ---------------------------------------------------------------------------
+
+//  = COLORS
+//  ---------------------------------------------------------------------------
+
+	$wizardBackground:	$whiteSmoke;
+	$wizardBorderColor:	$primaryAccent;

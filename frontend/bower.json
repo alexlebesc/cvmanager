@@ -1,0 +1,7 @@
+{
+  "name": "generator-awesomeness",
+  "version": "0.1.2",
+  "dependencies": {
+  	"awesomeness-boilerplate": "https://github.com/intuio/awesomeness-boilerplate.git#susy2"
+  }
+}
