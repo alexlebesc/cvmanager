@@ -9,19 +9,20 @@
 //  ---------------------------------------------------------------------------
 
 	// Your project configuration, adapt to you needs
-	@import "awesomeness-configuration";
+	//@import "awesomeness-configuration";
 
 	// Common base
 	@import "base";
 
 	// Code highlighting (only for the demo page, can be removed)
-	@import "imports/prism";
+	//@import "imports/prism";
 
 	// Modules (only for the demo page, can be removed)
-	@import "imports/modules/msg";
-	@import "imports/modules/meta-info";
-    @import "imports/modules/button";
+	//@import "imports/modules/msg";
+	//@import "imports/modules/meta-info";
+    //@import "imports/modules/button";
 
+	$orange:							#FFC400;
 
 	// It's just a demo, don't judge me ;)
 	body
@@ -29,4 +30,55 @@
 		@include rem(max-width, 85);
 		margin:0 auto;
 		@include rem(padding, $doubleSpace * 2 0);
+	  	border-top: 10px solid $orange;
+	  	padding: 0px;
+	}
+
+	.profile
+	{
+		text-align:center;
+
+	  	div {
+		  margin-top: -30%;
+		  background-color: $sand;
+		  position: relative;
+		}
+
+	  	h1 {
+		  	margin-bottom: 0px;
+		  	font-size: 3.2rem;
+		}
+
+	  	h2 {
+		  font-size: 2.5rem;
+		  margin-bottom: 0px;
+		}
+
+	  	.email, .phone {
+		  display:block;
+		}
+
+	  	.about-me {
+		  font-style: italic;
+		}
+	}
+
+	.experience {
+	  //padding:0 0.62rem;
+
+	  h1 {
+		font-size: 2.5rem;
+	  }
+
+	  .grayVeryLight {
+		background-color: #F7F7F7;
+	  }
+
+	  .grayLight {
+		background-color: #F3F3F2;
+	  }
+
+	  ul, p {
+		margin-bottom: 0px;
+	  }
 	}
