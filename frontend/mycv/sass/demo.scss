@@ -21,8 +21,10 @@
 	//@import "imports/modules/msg";
 	//@import "imports/modules/meta-info";
     //@import "imports/modules/button";
+    //@import "imports/modules/accordion";
 
-	$orange:							#FFC400;
+	//$orange:							#FFC400;
+    $orange:                            #EAB626;
 
 	// It's just a demo, don't judge me ;)
 	body
@@ -32,6 +34,7 @@
 		@include rem(padding, $doubleSpace * 2 0);
 	  	border-top: 10px solid $orange;
 	  	padding: 0px;
+	    font-size: 1.4rem;
 	}
 
 	.profile
@@ -60,25 +63,183 @@
 
 	  	.about-me {
 		  font-style: italic;
+          font-size: 1.6rem;
+          padding: 0 20px;
 		}
 	}
 
-	.experience {
-	  //padding:0 0.62rem;
+	.experience, .education {
 
-	  h1 {
-		font-size: 2.5rem;
+      .year {
+        font-size: 1.6rem;
+        //font-weight: bold;
+        padding-bottom: 5px;
+      }
+
+      .position, .degree {
+        font-size: 1.4rem;
+        font-weight: bold;
+        //padding-left: 10px;
+      }
+
+      .company, .school {
+        padding-bottom: 5px;
+		font-size: 1.4rem;
+        color: $orange;
+      }
+
+	  .school {
+		color: $orange;
 	  }
 
-	  .grayVeryLight {
-		background-color: #F7F7F7;
-	  }
+      .city {
+        font-size: 1.6rem;
+        padding: 10px;
+        font-style: italic;
+      }
 
-	  .grayLight {
-		background-color: #F3F3F2;
-	  }
+      p {
+        line-height: 21px;
+      }
+
+      ul {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        line-height:22px;
+        //display:none;
+      }
+
+      li {
+        padding-bottom: 5px;
+      }
 
 	  ul, p {
 		margin-bottom: 0px;
+	  }
+	}
+
+    .experience {
+      article {
+        border-top: 1px solid $grayVeryLight;
+      }
+
+      border-bottom: 1px solid $grayVeryLight;
+    }
+
+	.skills {
+	  li {
+		list-style: none;
+		padding: 2px 5px;
+		margin: 2px;
+		float:left;
+		width: 100%;
+		font-size: 1.4rem;
+        margin-bottom: 8px;
+
+		.skill {
+		  width: 45%;
+		  float: left;
+		  //background-color: #F2D588;
+          line-height: 10px;
+		}
+
+		.skill-title {
+		  background-color: $gray;
+		  padding: 1px 10px;
+		  color: $sand;
+		}
+
+		.level-box {
+		  float:right;
+		  width: 55%;
+		  text-align:center;
+		  position:relative;
+          line-height: 10px;
+		}
+
+		.level {
+          @include background-image(linear-gradient(to right, #F2D588, $orange));
+		  float: left;
+		  text-align:right;
+		  font-weight:bold;
+		  font-size: 1.2rem;
+		  padding-right: 10px;
+		}
+
+		/*.level-text {
+		  position: absolute;
+		  width:100%;
+		  left:0;
+		  //color: $sand;
+		  font-weight:bold;
+		  font-size: 1.2rem;
+		}*/
+
+		.level-10 {
+			width: 10%;
+		}
+
+		.level-20 {
+		  width: 20%;
+		}
+
+		.level-30 {
+		  width: 30%;
+		}
+
+		.level-40 {
+		  width: 40%;
+		}
+
+		.level-50 {
+		  width: 50%;
+		}
+
+		.level-60 {
+		  width: 60%;
+		}
+
+		.level-70 {
+		  width: 70%;
+		}
+
+		.level-80 {
+		  width: 80%;
+		}
+
+		.level-90 {
+		  width: 90%;
+		}
+
+		.level-100 {
+		  width: 100%;
+		}
+
+
+	  }
+
+	  ul {
+		margin:0;
+		padding:0;
+	  }
+	}
+
+	section {
+	  h1 {
+		font-size: 2.5rem;
+		color: $orange;
+		padding: 0 10px;
+		margin-bottom: 0px;
+	  }
+
+	  article {
+
+		padding: 5px 12px;
+
+		h1 {
+		  font-size: 1.9rem;
+		  color: $grayVeryDark;
+		  padding: 0;
+		}
 	  }
 	}
