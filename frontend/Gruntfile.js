@@ -68,7 +68,7 @@ module.exports = function (grunt)
             {
               expand: true,
               cwd: '<%= pkg.name %>/',
-              src: ['fonts/**', 'img/**'],
+              src: ['fonts/**', 'img/**', '*.pdf'],
               dest: '<%= pkg.build %>/'
             },
             // copy font awesome
