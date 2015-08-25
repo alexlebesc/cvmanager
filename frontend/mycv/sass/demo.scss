@@ -1,315 +1,342 @@
 //  ---------------------------------------------------------------------------
 //
-//  CSS file for framework demo page
+//  CSS file for CV
 //
 //  ---------------------------------------------------------------------------
-
-
 //  = IMPORTS
 //  ---------------------------------------------------------------------------
+// Your project configuration, adapt to you needs
 
-	// Your project configuration, adapt to you needs
-	//@import "awesomeness-configuration";
-
-	// Common base
-	@import "base";
-
-
-	@import "../../bower_components/font-awesome/scss/font-awesome";
-
-	// Code highlighting (only for the demo page, can be removed)
-	//@import "imports/prism";
-
-	// Modules (only for the demo page, can be removed)
-	//@import "imports/modules/msg";
-	//@import "imports/modules/meta-info";
-    //@import "imports/modules/button";
-    //@import "imports/modules/accordion";
-
-	//$orange:							#FFC400;
-    $orange:                            #EAB626;
-
-	// It's just a demo, don't judge me ;)
-	body
-	{
-		@include rem(max-width, 85);
-		margin:0 auto;
-		@include rem(padding, $doubleSpace * 2 0);
-	  	border-top: 10px solid $orange;
-	  	padding: 0px;
-	    font-size: 1.4rem;
-	}
-
-	.profile
-	{
-		text-align:center;
-        position: relative;
+// Common base
+@import "base";
+@import "../../bower_components/font-awesome/scss/font-awesome";
 
 
+$orange: #EAB626;
 
-        .icons {
-          margin-bottom: 0;
-          padding-bottom: 0;
-          color: $sand;
-          text-align: right;
-          background-color: rgba(0,0,0,0.5);
-          position: absolute;
-          right: 0;
-          padding-left: 20px;
-          padding-top: 5px;
+//  = GLOBAL
+//  ---------------------------------------------------------------------------
 
-          a, a:active {
-            color: $sand;
-            background-color: transparent;
-          }
+body {
+    @include rem(max-width, 85);
+    margin: 0 auto;
+    @include rem(padding, $doubleSpace * 2 0);
+    border-top: 10px solid $orange;
+    padding: 0px;
+    font-size: 1.4rem;
+}
+
+main {
+    position:relative;
+}
+
+section {
+    h1 {
+        font-size: 2.1rem;
+        color: $orange;
+        padding: 0 10px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    article {
+        padding: 5px 12px;
+        position:relative;
+
+        h1 {
+            font-size: 1.9rem;
+            color: $grayVeryDark;
+            padding: 0;
+            padding-top: 0px;
         }
+    }
+}
 
-	  	div {
-		  margin-top: -30%;
-		  background-color: $sand;
-		  position: relative;
-		}
+footer {
 
-	  	h1 {
-		  	margin-bottom: 0px;
-		  	font-size: 3.2rem;
-		}
+}
 
-	  	h2 {
-		  font-size: 2.5rem;
-		  margin-bottom: 0px;
-		}
+.icons {
+    float: right;
+    .fa {
+        font-size: 3rem;
+        padding-right: 20px;
+    }
 
-	  	.email, .phone {
-		  display:block;
-		}
+    a, a:active, a:hover {
+        color: $grayVeryDark;
+        background-color: transparent;
+    }
+}
 
-	  	.about-me {
-		  font-style: italic;
-          font-size: 1.4rem;
-          padding: 0 20px;
-		  padding-bottom: 25px;
-		  margin-bottom: 0px;
-		}
-	}
+.clear-both {
+    clear: both;
+}
 
-	.experience, .education {
+ul, p {
+    margin-bottom: 0px;
+}
 
-      .year {
+.icons-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: $sand;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+
+    a, a:active {
+        color: $sand;
+        background-color: transparent;
+    }
+}
+
+//  = PROFILE
+//  ---------------------------------------------------------------------------
+.profile {
+    text-align: center;
+    position: relative;
+
+    div {
+        margin-top: -30%;
+        background-color: $sand;
+        position: relative;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0px;
+    }
+
+    .email, .phone {
+        display: block;
+    }
+
+    .about-me {
+        font-style: italic;
+        font-size: 1.4rem;
+        padding: 0 20px;
+        padding-bottom: 25px;
+        margin-bottom: 0px;
+    }
+}
+
+//  = EXPERIENCE, EDUCATION
+//  ---------------------------------------------------------------------------
+
+.experience, .education {
+    background-color: #FAF8F5;
+    position: relative;
+
+    .year {
         font-size: 1.6rem;
         //font-weight: bold;
         padding-bottom: 5px;
-      }
+    }
 
-      .position, .degree {
+    .position, .degree {
         font-size: 1.4rem;
         font-weight: bold;
         //padding-left: 10px;
-      }
+    }
 
-      .company, .school {
+    .company, .school {
         padding-bottom: 5px;
-		font-size: 1.4rem;
+        font-size: 1.4rem;
         color: $orange;
-      }
+    }
 
-	  .school {
-		color: $orange;
-	  }
+    .school {
+        color: $orange;
+    }
 
-      .city {
-        font-size: 1.6rem;
+    .city {
+        font-size: 1.4rem;
         padding: 10px;
         font-style: italic;
-      }
+    }
 
-      p {
+    p {
         line-height: 21px;
-      }
+    }
 
-      ul {
+    ul {
         margin-top: 10px;
-        font-size: 1.5rem;
-        line-height:22px;
-        //display:none;
-      }
+        font-size: 1.4rem;
+        line-height: 22px;
+    }
 
-      li {
+    li {
         padding-bottom: 5px;
-      }
+    }
 
-	  ul, p {
-		margin-bottom: 0px;
-	  }
-
-      header {
+    header {
         .fa-chevron-down, .fa-chevron-up {
-          position: absolute;
-          top: 30px;
-          right:30px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
         }
 
         .fa-chevron-up {
-          display: none;
+            display: none;
         }
-      }
+    }
 
-      .active {
+    .is-active {
         .fa-chevron-down {
-          display: none;
+            display: none;
         }
 
         .fa-chevron-up {
-          display:inline;
+            display: inline;
         }
-      }
+    }
 
+    ul.tech {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
 
-	}
+        li {
+            background-color: $gray;
+            padding: 1px 10px;
+            color: $sand;
+            float: left;
+            width: auto;
+            line-height: 20px;
+            list-style: none;
+            margin: 2px;
+        }
+    }
+}
 
-    .experience {
-      article {
+.experience {
+    article {
         border-top: 1px dashed $grayVeryLight;
         position: relative;
-      }
-
-      border-bottom: 1px dashed $grayVeryLight;
     }
 
-	.skills {
-	  li {
-		list-style: none;
-		padding: 2px 5px;
-		margin: 2px;
-		float:left;
-		width: 100%;
-		font-size: 1.4rem;
+    border-bottom: 1px dashed $grayVeryLight;
+}
+
+//  = SKILLS
+//  ---------------------------------------------------------------------------
+
+.skills {
+
+    article {
+        h1 {
+            line-height: 10px;
+            padding-bottom: 15px;
+            font-size: 1.8rem;
+        }
+    }
+
+    li {
+        list-style: none;
+        padding: 2px 5px;
+        margin: 2px;
+        float: left;
+        width: 100%;
+        font-size: 1.4rem;
         margin-bottom: 8px;
 
-		.skill {
-		  width: 45%;
-		  float: left;
-		  //background-color: #F2D588;
-          line-height: 10px;
-		}
+        .skill {
+            width: 45%;
+            float: left;
+            //background-color: #F2D588;
+            line-height: 10px;
+        }
 
-		.skill-title {
-		  background-color: $gray;
-		  padding: 1px 10px;
-		  color: $sand;
-		}
+        .skill-title {
+            background-color: $gray;
+            padding: 1px 10px;
+            color: $sand;
+        }
 
-		.level-box {
-		  float:right;
-		  width: 55%;
-		  text-align:center;
-		  position:relative;
-          line-height: 10px;
-		}
+        .level-box {
+            float: right;
+            width: 55%;
+            text-align: center;
+            position: relative;
+            line-height: 10px;
+        }
 
-		.level {
-          @include background-image(linear-gradient(to right, #F2D588, $orange));
-		  float: left;
-		  text-align:right;
-		  font-weight:bold;
-		  font-size: 1.2rem;
-		  padding-right: 10px;
-		}
+        .level {
+            @include background-image(linear-gradient(to right, #F2D588, $orange));
+            float: left;
+            text-align: right;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-right: 10px;
+        }
 
-		.level-10 {
-			width: 10%;
-		}
+        .level-10 {
+            width: 10%;
+        }
 
-		.level-20 {
-		  width: 20%;
-		}
+        .level-20 {
+            width: 20%;
+        }
 
-		.level-30 {
-		  width: 30%;
-		}
+        .level-30 {
+            width: 30%;
+        }
 
-		.level-40 {
-		  width: 40%;
-		}
+        .level-40 {
+            width: 40%;
+        }
 
-		.level-50 {
-		  width: 50%;
-		}
+        .level-50 {
+            width: 50%;
+        }
 
-		.level-60 {
-		  width: 60%;
-		}
+        .level-60 {
+            width: 60%;
+        }
 
-		.level-70 {
-		  width: 70%;
-		}
+        .level-70 {
+            width: 70%;
+        }
 
-		.level-80 {
-		  width: 80%;
-		}
+        .level-80 {
+            width: 80%;
+        }
 
-		.level-90 {
-		  width: 90%;
-		}
+        .level-90 {
+            width: 90%;
+        }
 
-		.level-100 {
-		  width: 100%;
-		}
-
-
-	  }
-
-	  ul {
-		margin:0;
-		padding:0;
-		float:left;
-		width:100%;
-	  }
-
-	  .tools {
-		li {
-		  background-color: $gray;
-		  padding: 1px 10px;
-		  color: $sand;
-		  float: left;
-		  width: auto;
-		  line-height: 20px;
-		}
-	  }
-	}
-
-	section {
-	  h1 {
-		font-size: 2.1rem;
-		color: $orange;
-		padding: 0 10px;
-		margin-bottom: 0px;
-	  }
-
-	  article {
-
-		padding: 5px 12px;
-
-		h1 {
-		  font-size: 1.9rem;
-		  color: $grayVeryDark;
-		  padding: 0;
-		}
-	  }
-	}
-
-    footer {
+        .level-100 {
+            width: 100%;
+        }
 
     }
 
-    .icons {
-      float:right;
-      .fa {
-        font-size: 3rem;
-        padding-right: 20px;
-      }
+    ul {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
     }
 
-    .clear-both {
-      clear: both;
+    .tools {
+        li {
+            background-color: $gray;
+            padding: 1px 10px;
+            color: $sand;
+            float: left;
+            width: auto;
+            line-height: 20px;
+        }
     }
+}
