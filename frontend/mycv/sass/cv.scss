@@ -28,6 +28,10 @@ body {
 
 main {
     position:relative;
+
+    a {
+        padding: 0px;
+    }
 }
 
 section {
@@ -53,7 +57,7 @@ section {
 }
 
 footer {
-
+    padding-bottom: 20px;
 }
 
 .icons {
