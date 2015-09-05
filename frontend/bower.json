@@ -3,6 +3,9 @@
   "version": "0.1.2",
   "dependencies": {
   	"awesomeness-boilerplate": "https://github.com/intuio/awesomeness-boilerplate.git#susy2",
-    "font-awesome": "~4.4.0"
+    	"font-awesome": "4.4.0"
+  },
+  "resolutions": {
+  	"font-awesome": "4.4.0"
   }
 }
