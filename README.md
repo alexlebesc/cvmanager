@@ -2,7 +2,7 @@
 
 You will find the code of my online CV. The idea was to build a mobile first and responsive Website.
 
-## tools and technologies used
+## Tools and technologies used
 
 * yeoman
 * generator-awesomeness
@@ -13,7 +13,7 @@ You will find the code of my online CV. The idea was to build a mobile first and
 * require.js
 * jQuery
 
-## installation
+## Installation
 
 First install node.js then install grunt cli using npm
 
@@ -58,6 +58,10 @@ The server provides a URL with your current IP address to allows you to browse y
 
 A browser-sync is also running and will refresh all devices and browsers which got your CV development URL loaded. Another plus of the browser-sync feature is that you can interact with all the different browsers in the same time when scrolling on one browser.
 
+## Deployment to production
+
+Developing is great but at the end your goal is to publish your CV online. To make your code production ready you will have to run the command `grunt build` in the frontend directory. This create a `dist` directory with the HTML, CSS, and JS minified.
+Only this `dist` directory has to be uploaded to your production server.
 
 ## Upcoming
 
