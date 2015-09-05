@@ -15,8 +15,6 @@ You will find the code of my online CV. The idea was to build a mobile first and
 
 ## installation
 
-http://gruntjs.com/getting-started
-
 First install node.js then install grunt cli using npm
 
 ```
@@ -37,6 +35,28 @@ npm install
 mkdir bower_components
 bower install
 ```
+
+You need to have Ruby and Compass installed and in your system PATH.
+
+Install ruby, compass and other requiered gems
+
+```
+gem install compass
+gem install compass-normalize
+gem install susy
+gem install breakpoint
+```
+## Development 
+
+To customize the frontend you will find the code in `frontend/mycv`
+
+You can use the command `grunt serve` in the frontend directory to run a local webserver to serve your creation.
+
+Thanks to a watcher the browser will refresh everytime you change some CSS or HTML code using your favorite code editor.
+
+The server provides a URL with your current IP address to allows you to browse your CV on your mobile devices while developing.
+
+A browser-sync is also running and will refresh all devices and browsers which got your CV development URL loaded. Another plus of the browser-sync feature is that you can interact with all the different browsers in the same time when scrolling on one browser.
 
 
 ## Upcoming
