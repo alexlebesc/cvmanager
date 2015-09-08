@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<cv>
+    <profile>
+        <fullname>Alex Le Bescond</fullname>
+        <firstname>Alex</firstname>
+        <lastname>Le Bescond</lastname>
+        <title>Développeur Web Full Stack</title>
+        <email>alex.lebescond@gmail.com</email>
+        <phone>+33 (0)7 81 77 06 66</phone>
+        <aboutme>
+            Passionné des technologies Web, avec plus de 9 ans d'expérience, je suis à la recherche  d’un poste
+            de (lead) développeur full stack ou architecte au sein d’une entreprise dynamique et innovatrice.
+        </aboutme>
+    </profile>
+
+    <experience>
+        <startdate>2012</startdate>
+        <enddate>2015</enddate>
+        <position>Développeur Web Full Stack</position>
+        <company>Sound Alliance</company>
+        <city>Sydney</city>
+        <country>Australie</country>
+        <comment>
+            Responsable du développement et des innovations technologiques de tous les magazines en ligne de Sound Alliance :
+
+            * [www.inthemix.com.au](http://www.inthemix.com.au) (686 000 visites / mois)
+            * [www.fasterlouder.com.au](http://www.fasterlouder.com.au) (531 000 visites / mois)
+            * [www.samesame.com.au](http://www.samesame.com.au) (100 000 visites / mois)
+            * [junkee.com](http://junkee.com) (1 537 000 visites / mois)
+            * [awol.com.au](http://awol.com.au) (136 000 visites / mois)
+
+            Maintenance de la plateforme de publication “CORE”, CMS développé à Sound Alliance utilisant MVC.
+
+            Responsable des performances et de l’optimisation de l’infrastructure des sites en production.
+
+            Amélioration de l’environnement et des méthodes de développement de l’équipe.
+        </comment>
+        <tech>
+            * PHP 5.4
+            * Symfony2
+            * Wordpress
+            * MySQL
+            * Require.js
+            * Angular.js
+            * Grunt
+            * Bower
+            * SASS
+            * Vagrant
+            * Chef
+            * Varnish
+            * New Relic
+        </tech>
+    </experience>
+    <experience>
+        <startdate>2011</startdate>
+        <enddate>2012</enddate>
+        <position>Développeur PHP Sénior</position>
+        <company>Viocorp</company>
+        <city>Sydney</city>
+        <country>Australie</country>
+        <comment>
+            Développement de nouvelles fonctionnalités, amélioration et optimisation de VIOMEDIA, CMS dédié à la publication de vidéos en ligne :
+
+            * Création d’outils de reporting et d’analyse pour VIOMEDIA
+            * Optimisation de requêtes SQL (MSSQL)
+            * Utilisation des méthodes de développement Domain Driven Design (DDD) et Command-Query Responsibility Segregation (CQRS) pour la réingénérie logicielle (refactoring) de VIOMEDIA
+            * Utilisation de Backbone.js pour les interfaces utilisateur du CMS.
+            
+        </comment>
+        <tech>
+            
+            * PHP 5.4
+            * PHP 5.3
+            * MSSQL
+            * Symfony2
+            * jQuery
+            * Backbone.js
+            * less
+            * twig
+            
+        </tech>
+    </experience>
+    <experience>
+        <startdate>2009</startdate>
+        <enddate>2011</enddate>
+        <position>Développeur PHP</position>
+        <company>Solution 4</company>
+        <city>Sydney</city>
+        <country>Australie</country>
+        <comment>
+            Développement de nouvelles fonctionnalités et amélioration de SENRO, un progiciel de gestion pour entreprises spécialisées dans les assurances et crédits :
+
+            * Développement d’un gestionnaire de futurs clients
+            * Développement d’un calendrier
+            * Développement d’un système d’annotation
+            * Développement d’un gestionnaire de tâche.
+
+        </comment>
+        <tech>
+            * PHP
+            * MySql
+            * Zend Framework 1
+            * jQuery
+            * HTML
+            * CSS
+        </tech>
+    </experience>
+    <experience>
+        <startdate>2007</startdate>
+        <enddate>2009</enddate>
+        <position>Développeur Web</position>
+        <company>Quanthouse</company>
+        <city>Paris</city>
+        <country>France</country>
+        <comment>
+            * Développement de composants Web intégrés à QuantFactory, un IDE pour traders.
+            * Design, développement et déploiement d’outils Intranet.
+            * Développement d’un portail Web pour les clients de Quanthouse.
+            * Développement du site Web de Quanthouse.
+            * Migration de données d’une plateforme de gestion de services d’assistance à OTRS (Open-source Ticket Request System).
+        </comment>
+        <tech>
+            * PHP
+            * Ruby
+            * MySql
+            * Xslt
+            * SOAP
+            * Drupal 6
+        </tech>
+    </experience>
+    <experience>
+        <startdate>2007</startdate>
+        <position>Développeur Web</position>
+        <company>CSIRO</company>
+        <city>Brisbane</city>
+        <country>Australie</country>
+        <comment>
+            Développement d’une interface Web permettant de contrôler des systèmes embarqués :
+            
+            * Configurer et lancer des missions.
+            * Visualisation des messages de log.
+        </comment>
+        <tech>
+            * PHP
+            * HTML
+            * CSS
+            * Javascript
+            * C 
+        </tech>
+    </experience>
+    <experience>
+        <startdate>2005</startdate>
+        <enddate>2006</enddate>
+        <position>Développeur Web</position>
+        <company>Altcom</company>
+        <city>Penzance</city>
+        <country>Royaume Uni</country>
+        <comment>
+            Création d’une plateforme de vente de photos en ligne.
+        </comment>
+        <tech>
+            * PHP
+            * MySql
+            * HTML
+            * CSS
+            * Javascript
+            * OSCommerce
+        </tech>
+    </experience>
+    <experience>
+        <startdate>2004</startdate>
+        <position>Développeur Web</position>
+        <company>IFREMER</company>
+        <city>Brest</city>
+        <country>France</country>
+        <comment>
+            Développement d’une application Web permettant de contrôler les droits d’accès sur les sites Intranet de l’IFREMER.
+        </comment>
+        <tech>
+            * Perl
+            * HTML
+            * CSS
+            * LDAP
+        </tech>
+    </experience>
+
+    <education>
+        <startdate>2005</startdate>
+        <enddate>2007</enddate>
+        <title>Master professionnel, spécialité Informatique</title>
+        <school>IUP</school>
+        <city>Vannes (56)</city>
+    </education>
+
+    <education>
+        <startdate>2004</startdate>
+        <enddate>2005</enddate>
+        <title>Licence Informatique</title>
+        <school>IUP</school>
+        <city>Vannes (56)</city>
+    </education>
+
+    <education>
+        <startdate>2002</startdate>
+        <enddate>2004</enddate>
+        <title>D.U.T. génie des télécommunications et réseaux</title>
+        <school>IUT</school>
+        <city>Lannion (22)</city>
+    </education>
+
+    <skills>
+        <title>Programmation</title>
+        <skill>
+            <name>PHP</name>
+            <level>100</level>
+        </skill>
+        <skill>
+            <name>Symfony2</name>
+            <level>80</level>
+        </skill>
+        <skill>
+            <name>Zend Framework 1</name>
+            <level>40</level>
+        </skill>
+        <skill>
+            <name>Wordpress</name>
+            <level>90</level>
+        </skill>
+        <skill>
+            <name>Drupal 6</name>
+            <level>40</level>
+        </skill>
+        <skill>
+            <name>OSCommerce</name>
+            <level>60</level>
+        </skill>
+        <skill>
+            <name>HTML</name>
+            <level>100</level>
+        </skill>
+        <skill>
+            <name>CSS</name>
+            <level>100</level>
+        </skill>
+        <skill>
+            <name>SASS</name>
+            <level>40</level>
+        </skill>
+        <skill>
+            <name>Javascript</name>
+            <level>100</level>
+        </skill>
+        <skill>
+            <name>JQuery</name>
+            <level>60</level>
+        </skill>
+        <skill>
+            <name>Backbone.js</name>
+            <level>30</level>
+        </skill>
+        <skill>
+            <name>Require.js</name>
+            <level>60</level>
+        </skill>
+        <skill>
+            <name>Angular.js</name>
+            <level>50</level>
+        </skill>
+        <skill>
+            <name>MySql</name>
+            <level>90</level>
+        </skill>
+        <skill>
+            <name>MS SQL</name>
+            <level>40</level>
+        </skill>
+        <skill>
+            <name>Ruby</name>
+            <level>30</level>
+        </skill>
+        <skill>
+            <name>Perl</name>
+            <level>20</level>
+        </skill>
+        <skill>
+            <name>C, C++</name>
+            <level>10</level>
+        </skill>
+        <skill>
+            <name>Java</name>
+            <level>10</level>
+        </skill>
+    </skills>
+
+    <skills>
+        <title>Outils de travail</title>
+        <skill><name>Linux</name></skill>
+        <skill><name>Phpstorm</name></skill>
+        <skill><name>Vim</name></skill>
+        <skill><name>Composer</name></skill>
+        <skill><name>Git</name></skill>
+        <skill><name>Github</name></skill>
+        <skill><name>Vagrant</name></skill>
+        <skill><name>Virtual Box</name></skill>
+        <skill><name>Chef</name></skill>
+        <skill><name>Yeoman</name></skill>
+        <skill><name>Grunt</name></skill>
+        <skill><name>Bower</name></skill>
+        <skill><name>Jira</name></skill>
+        <skill><name>Trello</name></skill>
+        <skill><name>Chrome</name></skill>
+        <skill><name>New Relic</name></skill>
+        <skill><name>Varnish</name></skill>
+    </skills>
+
+    <language>
+        <name>Français</name>
+        <level>Langue maternelle</level>
+    </language>
+
+    <language>
+        <name>Anglais</name>
+        <level>Bilingue</level>
+    </language>
+
+    <language>
+        <name>Espagnol</name>
+        <level>Notions</level>
+    </language>
+    
+    <interests>
+        * Planche à voile
+        * Surf
+        * Football
+        * VTT
+        * Trekking
+        * Guitare basse, guitare, harmonica, piano, accordéon
+    </interests>
+</cv>
