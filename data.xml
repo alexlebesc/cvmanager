@@ -292,7 +292,7 @@
         </skill>
     </skills>
 
-    <skills>
+    <skills class="tools">
         <title>Outils de travail</title>
         <skill><name>Linux</name></skill>
         <skill><name>Phpstorm</name></skill>
