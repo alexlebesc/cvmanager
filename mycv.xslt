@@ -184,21 +184,24 @@
                 <xsl:attribute name="data-collapse-member">
                     <xsl:value-of select="translate(./company, $toreplace, $replaceBy)" />
                 </xsl:attribute>
-                <ul class="collapse-inner">
-                    <li>
-                        <xsl:value-of select="./comment"/>
-                    </li>
-                </ul>
+                <div class="collapse-inner">
+                    <xsl:copy-of select="comment"/>
+                </div>
                 <ul class="tech">
-                    <li>
-                        <xsl:value-of select="./tech"/>
-                    </li>
+                    <xsl:apply-templates select="tech"  mode="experience" />
                 </ul>
                 <div class="clear-both"></div>
             </div>
 
         </article>
     </xsl:template>
+
+    <xsl:template match="tech"  mode="experience">
+        <li>
+            <xsl:value-of select="."/>
+        </li>
+    </xsl:template>
+
 
     <xsl:template match="education">
         <article>
@@ -249,6 +252,14 @@
     </xsl:template>
 
     <xsl:template match="interests">
-        <xsl:value-of select="."/>
+        <ul>
+            <xsl:apply-templates select="activity"/>
+        </ul>
+
     </xsl:template>
+
+    <xsl:template match="activity">
+        <li><xsl:value-of select="."/></li>
+    </xsl:template>
+
 </xsl:stylesheet>
