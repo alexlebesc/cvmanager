@@ -8,7 +8,33 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use CVManager\Command;
+use Symfony\Component\Console\Application;
+
+$console = new Application();
+
+$dir = "src/CVManager/Command/";
+$dh  = opendir($dir);
+$dir_list = array($dir);
+
+while (false !== ($filename = readdir($dh))) {
+    if($filename!= "." && $filename != ".." && is_dir($dir.$filename))
+        array_push($dir_list, $dir.$filename.'/');
+}
+
+foreach ($dir_list as $dir) {
+
+    foreach (glob($dir."*.php") as $filename) {
+        $class = str_replace('src/', '', $filename);
+        $class = str_replace('/','\\', $class);
+        $class = str_replace('.php','', $class);
+
+        $console->add(new $class());
+    }
+}
+
+closedir($dh);
+
+$console->run();
 
 echo "welcome in CV manager";
 
@@ -21,23 +47,10 @@ echo "welcome in CV manager";
  * - Skills
  */
 
-echo "\n";
-echo "- education"."\n";
-echo "- experience"."\n";
-echo "- interests"."\n";
-echo "- profile"."\n";
-echo "- skills"."\n";
-echo "- build frontend"."\n";
+
 
 // TODO: create command switching
 
-// if no argument is passed to the command
-// display the help
 
-CVManager\Command\Education\View::execute();
-CVManager\Command\Experience\View::execute();
-CVManager\Command\Interests\View::execute();
-CVManager\Command\Profile\View::execute();
-CVManager\Command\Skills\View::execute();
 
 

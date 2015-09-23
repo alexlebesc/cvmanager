@@ -8,14 +8,24 @@
 
 namespace CVManager\Command\Experience;
 
-use CVManager\Command;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
-class Edit implements Command
+class Edit extends Command
 {
-    public static function execute()
+    public function configure()
+    {
+        $this
+            ->setName('experience:edit')
+            ->setDescription('you are in the EXPERIENCE edit mode')
+        ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         // TODO: Implement execute() method.
-
         echo "you are in the EXPERIENCE edit mode";
         echo "\n";
     }

@@ -9,11 +9,22 @@
 namespace CVManager\Command\Interests;
 
 
-use CVManager\Command;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
-class View implements Command
+class View extends Command
 {
-    public static function execute()
+    public function configure()
+    {
+        $this
+            ->setName('interest:view')
+            ->setDescription('this is the INTERESTS section')
+        ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         // TODO: Implement execute() method.
 

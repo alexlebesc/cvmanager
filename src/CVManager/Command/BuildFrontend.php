@@ -9,11 +9,21 @@
 namespace CVManager\Command;
 
 
-use CVManager\Command;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
-class BuildFrontend implements Command
+class BuildFrontend extends Command
 {
-    public function execute()
+    public function configure()
+    {
+        $this
+            ->setName('frontend:build')
+            ->setDescription('use to build the frontend')
+        ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         echo "generate frontend";
         echo "\n";
@@ -26,18 +36,18 @@ class BuildFrontend implements Command
          * build index.html
          */
 
-        $xslFile = __DIR__ . "/../mycv.xslt";
-        $xmlFile = __DIR__ . "/../data.xml";
+        $xslFile = getcwd() . "/mycv.xslt";
+        $xmlFile = getcwd() . "/data.xml";
 
-        $xslDoc = new DOMDocument();
+        $xslDoc = new \DOMDocument();
         $xslDoc->load($xslFile);
 
-        $xmlDoc = new DOMDocument();
+        $xmlDoc = new \DOMDocument();
         $xmlDoc->load($xmlFile);
 
-        $proc = new XSLTProcessor();
+        $proc = new \XSLTProcessor();
         $proc->importStylesheet($xslDoc);
 
-        $proc->transformToUri($xmlDoc, 'file://'.getcwd().'/../frontend/mycv/index.html');
+        $proc->transformToUri($xmlDoc, 'file://'.getcwd().'/frontend/mycv/index.html');
     }
 }

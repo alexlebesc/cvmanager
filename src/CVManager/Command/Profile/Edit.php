@@ -9,11 +9,22 @@
 namespace CVManager\Command\Profile;
 
 
-use CVManager\Command;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
-class Edit implements Command
+class Edit extends Command
 {
-    public static function execute()
+    public function configure()
+    {
+        $this
+            ->setName('profile:edit')
+            ->setDescription('this is the PROFILE edit mode')
+        ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         // TODO: Implement execute() method.
 
