@@ -6,26 +6,43 @@
  * Time: 11:55
  */
 
+function __autoload($class)
+{
+    $class = str_replace('\\', '/', $class) . '.php';
+    $class = str_replace('CVManager','.', $class);
+	require_once($class);
+}
+
+use CVManager\Command;
+
 echo "welcome in CV manager";
 
 /**
- * cvmanager build
- *
- * take the xml data
- * take the xslt
- * build index.html
+ * list the different sections available in the CVMANAGER
+ * - Education
+ * - Experience
+ * - Interests
+ * - Profile
+ * - Skills
  */
 
-$xslFile = __DIR__ . "/mycv.xslt";
-$xmlFile = __DIR__ . "/data.xml";
+echo "\n";
+echo "- education"."\n";
+echo "- experience"."\n";
+echo "- interests"."\n";
+echo "- profile"."\n";
+echo "- skills"."\n";
+echo "- build frontend"."\n";
 
-$xslDoc = new DOMDocument();
-$xslDoc->load($xslFile);
+// TODO: create command switching
 
-$xmlDoc = new DOMDocument();
-$xmlDoc->load($xmlFile);
+// if no argument is passed to the command
+// display the help
 
-$proc = new XSLTProcessor();
-$proc->importStylesheet($xslDoc);
+CVManager\Command\Education\View::execute();
+CVManager\Command\Experience\View::execute();
+CVManager\Command\Interests\View::execute();
+CVManager\Command\Profile\View::execute();
+CVManager\Command\Skills\View::execute();
 
-$proc->transformToUri($xmlDoc, 'file://'.getcwd().'/frontend/mycv/index.html');
+
