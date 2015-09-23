@@ -6,12 +6,7 @@
  * Time: 11:55
  */
 
-function __autoload($class)
-{
-    $class = str_replace('\\', '/', $class) . '.php';
-    $class = str_replace('CVManager','.', $class);
-	require_once($class);
-}
+require_once __DIR__ . '/vendor/autoload.php';
 
 use CVManager\Command;
 
