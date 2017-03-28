@@ -8,16 +8,77 @@
         <email>alex.lebescond@gmail.com</email>
         <phone>+33 (0)7 81 77 06 66</phone>
         <aboutme>
-            Passionné des technologies Web, avec plus de 9 ans d'expérience, je suis à la recherche  d’un poste
+            Passionné des technologies Web, avec plus de 10 ans d'expérience, je suis à la recherche  d’un poste
             de (lead) développeur full stack ou architecte au sein d’une entreprise dynamique et innovatrice.
         </aboutme>
     </profile>
 
     <experience>
+        <startdate>2015</startdate>
+        <enddate>2017</enddate>
+        <position>Lead Développeur</position>
+        <company>Heliopsis</company>
+        <city>Lyon</city>
+        <country>France</country>
+        <comment>
+            <ul>
+                <li>
+                    Développement de sites Web avec eZpublish et Symfony.
+                </li>
+                <li>
+                    Développement d'applications mobiles iOS et android avec angular et ionic
+                </li>
+                <li>
+                    Création des environnements de serveur de preproduction, de production et déploiement des sites développés par l'agence.
+                </li>
+                <li>
+                    Responsable d'une équipe de 4 développeurs frontend et backend.
+                </li>
+
+                <li>
+                    En charge de la lecture des cahiers des charges et de proposer des solutions techniques répondant aux besoins des clients.
+                </li>
+
+                <li>
+                   Estimations des temps de développements.
+                </li>
+
+                <li>
+                   Gestion et plannification des développements en étroite collaboration avec les chefs de projets.
+                </li>
+                <li>
+                    Responsable des recrutements des développeurs.
+                </li>
+                <li>
+                    Responsable de la montée en compétence et du partage de connaissance des membres de l'équipe de développement.
+                </li>
+                <li>
+                    Mise en place de méthodes permettant un travail collaboratif et agile sur les différents projets de l'agence (inspiration SCRUM et Kanban)
+                </li>
+                <li>
+                    Mise en place de procédures améliorant la qualité du code écrit par les développeurs. Gain en productivité sur les phases de debug et sur les évolutions des produits.
+                </li>
+
+
+            </ul>
+        </comment>
+
+        <tech>PHP</tech>
+        <tech>Symfony</tech>
+        <tech>eZpublish</tech>
+        <tech>Wordpress</tech>
+        <tech>MySQL</tech>
+        <tech>Angular.js</tech>
+        <tech>Angular2</tech>
+        <tech>ionic</tech>
+        <tech>Docker</tech>
+
+    </experience>
+    <experience>
         <startdate>2012</startdate>
         <enddate>2015</enddate>
         <position>Développeur Web Full Stack</position>
-        <company>Sound Alliance</company>
+        <company>Junkee Media</company>
         <city>Sydney</city>
         <country>Australie</country>
         <comment>
@@ -26,16 +87,14 @@
                     Responsable du développement et des innovations technologiques de tous les magazines en ligne de Sound Alliance :
 
                     <ul>
-                        <li><a href="http://www.inthemix.com.au">www.inthemix.com.au</a> 686 000 visites / mois)</li>
-                        <li><a href="http://www.fasterlouder.com.au">www.fasterlouder.com.au</a> (531 000 visites / mois)</li>
-                        <li><a href=">http://www.samesame.com.au">www.samesame.com.au</a> (100 000 visites / mois)</li>
-                        <li><a href="http://junkee.com">junkee.com</a> (1 537 000 visites / mois)</li>
-                        <li><a href="http://awol.com.au">awol.com.au</a> (136 000 visites / mois)</li>
+                        <li><a href="http://www.inthemix.com.au">www.inthemix.com.au</a> (686 000 visites / mois en 2015)</li>
+                        <li><a href="http://www.fasterlouder.com.au">www.fasterlouder.com.au</a> (531 000 visites / mois en 2015)</li>
+                        <li><a href="http://www.samesame.com.au">www.samesame.com.au</a> (100 000 visites / mois en 2015)</li>
+                        <li><a href="http://junkee.com">junkee.com</a> (1 537 000 visites / mois en 2015)</li>
+                        <li><a href="http://awol.com.au">awol.com.au</a> (136 000 visites / mois en 2015)</li>
                     </ul>
 
                 </li>
-
-
 
                 <li>
                     Maintenance de la plateforme de publication “CORE”, CMS développé à Sound Alliance utilisant MVC.
@@ -51,8 +110,8 @@
             </ul>
         </comment>
 
-        <tech>PHP 5.4</tech>
-        <tech>Symfony2</tech>
+        <tech>PHP</tech>
+        <tech>Symfony</tech>
         <tech>Wordpress</tech>
         <tech>MySQL</tech>
         <tech>Require.js</tech>
@@ -90,14 +149,12 @@
 
         </comment>
 
-        <tech>PHP 5.4</tech>
-        <tech>PHP 5.3</tech>
+        <tech>PHP</tech>
         <tech>MSSQL</tech>
-        <tech>Symfony2</tech>
+        <tech>Symfony</tech>
         <tech>jQuery</tech>
         <tech>Backbone.js</tech>
         <tech>less</tech>
-        <tech>twig</tech>
 
     </experience>
     <experience>
@@ -110,7 +167,7 @@
         <comment>
             <ul>
                 <li>
-                    Développement de nouvelles fonctionnalités et amélioration de SENRO, un progiciel de gestion pour entreprises spécialisées dans les assurances et crédits :
+                    Développement de nouvelles fonctionnalités et amélioration de SENRO, un progiciel de gestion pour entreprises spécialisé dans les assurances et crédits :
 
                     <ul>
                         <li>Développement d’un gestionnaire de futurs clients</li>
@@ -125,7 +182,7 @@
 
         <tech>PHP</tech>
         <tech>MySql</tech>
-        <tech>Zend Framework 1</tech>
+        <tech>Zend Framework</tech>
         <tech>jQuery</tech>
         <tech>HTML</tech>
         <tech>CSS</tech>
@@ -152,7 +209,7 @@
         <tech>MySql</tech>
         <tech>Xslt</tech>
         <tech>SOAP</tech>
-        <tech>Drupal 6</tech>
+        <tech>Drupal</tech>
     </experience>
     <experience>
         <startdate>2007</startdate>
@@ -250,14 +307,14 @@
         <title>Programmation</title>
         <skill>
             <name>PHP</name>
-            <level>100</level>
+            <level>90</level>
         </skill>
         <skill>
-            <name>Symfony2</name>
+            <name>Symfony</name>
             <level>80</level>
         </skill>
         <skill>
-            <name>Zend Framework 1</name>
+            <name>Zend Framework</name>
             <level>40</level>
         </skill>
         <skill>
@@ -265,7 +322,7 @@
             <level>90</level>
         </skill>
         <skill>
-            <name>Drupal 6</name>
+            <name>Drupal</name>
             <level>40</level>
         </skill>
         <skill>
@@ -274,11 +331,11 @@
         </skill>
         <skill>
             <name>HTML</name>
-            <level>100</level>
+            <level>90</level>
         </skill>
         <skill>
             <name>CSS</name>
-            <level>100</level>
+            <level>90</level>
         </skill>
         <skill>
             <name>SASS</name>
@@ -286,7 +343,7 @@
         </skill>
         <skill>
             <name>Javascript</name>
-            <level>100</level>
+            <level>80</level>
         </skill>
         <skill>
             <name>JQuery</name>
@@ -305,6 +362,14 @@
             <level>50</level>
         </skill>
         <skill>
+            <name>Angular2</name>
+            <level>50</level>
+        </skill>
+        <skill>
+            <name>ionic</name>
+            <level>50</level>
+        </skill>
+        <skill>
             <name>MySql</name>
             <level>90</level>
         </skill>
@@ -316,37 +381,20 @@
             <name>Ruby</name>
             <level>30</level>
         </skill>
-        <skill>
-            <name>Perl</name>
-            <level>20</level>
-        </skill>
-        <skill>
-            <name>C, C++</name>
-            <level>10</level>
-        </skill>
-        <skill>
-            <name>Java</name>
-            <level>10</level>
-        </skill>
     </skills>
 
     <skills class="tools">
         <title>Outils de travail</title>
         <skill><name>Linux</name></skill>
+        <skill><name>Apache</name></skill>
+        <skill><name>Php</name></skill>
+        <skill><name>MySQL</name></skill>
+        <skill><name>Docker</name></skill>
+        <skill><name>Composer</name></skill>
         <skill><name>Phpstorm</name></skill>
         <skill><name>Vim</name></skill>
-        <skill><name>Composer</name></skill>
         <skill><name>Git</name></skill>
         <skill><name>Github</name></skill>
-        <skill><name>Vagrant</name></skill>
-        <skill><name>Virtual Box</name></skill>
-        <skill><name>Chef</name></skill>
-        <skill><name>Yeoman</name></skill>
-        <skill><name>Grunt</name></skill>
-        <skill><name>Bower</name></skill>
-        <skill><name>Jira</name></skill>
-        <skill><name>Trello</name></skill>
-        <skill><name>Chrome</name></skill>
         <skill><name>New Relic</name></skill>
         <skill><name>Varnish</name></skill>
     </skills>
@@ -372,6 +420,7 @@
         <activity>Football</activity>
         <activity>VTT</activity>
         <activity>Trekking</activity>
+        <activity>Jardinage</activity>
         <activity>Guitare basse, guitare, harmonica, piano, accordéon</activity>
     </interests>
 </cv>

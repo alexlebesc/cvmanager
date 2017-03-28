@@ -52,9 +52,9 @@ To customize the frontend you will find the code in `frontend/mycv`
 
 You can use the command `grunt serve` in the frontend directory to run a local webserver to serve your creation.
 
-Thanks to a watcher the browser will refresh everytime you change some CSS or HTML code using your favorite code editor.
+Thanks to watchers and livereload the browser will refresh everytime you change some CSS or HTML code using your favorite code editor.
 
-The server provides a URL with your current IP address to allows you to browse your CV on your mobile devices while developing.
+The server use 0.0.0.0 as IP address to be able to load the CV from your mobile devices while developing.
 
 A browser-sync is also running and will refresh all devices and browsers which got your CV development URL loaded. Another plus of the browser-sync feature is that you can interact with all the different browsers in the same time when scrolling on one browser.
 
